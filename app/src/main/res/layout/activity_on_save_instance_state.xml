@@ -1,48 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:layout_margin="16dp"
     android:orientation="vertical"
     tools:context=".OnSaveInstanceState">
 
+
     <EditText
-        android:id="@+id/et_name"
+        android:id="@+id/inName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
-        android:layout_marginHorizontal="10dp"/>
+        android:hint="Username" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:inputType="phone" />
 
 
     <TextView
-        android:id="@+id/tv_count"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/purple_700"
-        android:textSize="40sp"
-        android:layout_marginVertical="20dp"/>
+        android:text="0"
+        android:textSize="32sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:text="COUNT UP" />
 
-        <Button
-            android:id="@+id/btn_increment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Increament Button"
-            android:onClick="incrementCounter"/>
-
-        <Button
-            android:id="@+id/btn_decrement"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="Decrement Button"
-            android:onClick="decrementCounter"/>
-    </LinearLayout>
 
 </LinearLayout>

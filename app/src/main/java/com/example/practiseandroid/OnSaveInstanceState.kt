@@ -1,48 +1,46 @@
 package com.example.practiseandroid
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.view.View
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class OnSaveInstanceState : AppCompatActivity() {
 
-    private lateinit var counterTextView : TextView
-    private var countValue = 0
-
-    companion object{
-     const val SCORE_KEY = "score_key"
-    }
+    lateinit var button: Button
+    lateinit var textView: TextView
+    var counter = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_on_save_instance_state)
-        displayCounter()
+
+        if(savedInstanceState != null){
+            val message : String? = savedInstanceState.getString("message")
+            Toast.makeText(this,message,Toast.LENGTH_LONG).show()
+            counter = savedInstanceState.getInt("counter",0)
+        }
+
+        button = findViewById<Button>(R.id.button)
+        textView = findViewById<TextView>(R.id.textView)
+        textView.setText( "" +counter)
+
+        button.setOnClickListener {
+            counter = Integer.valueOf(textView.getText().toString()) + 1
+            textView.setText(""+counter)
+        }
     }
 
-    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
-        super.onSaveInstanceState(outState, outPersistentState)
-        outState.putInt(SCORE_KEY,countValue)
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString("message", "This is a saved message")
+        outState.putInt("counter", counter)
     }
 
-    override fun onRestoreInstanceState(outState: Bundle) {
-        super.onRestoreInstanceState(outState)
-        outState.putInt(SCORE_KEY,countValue)
-    }
-
-    fun incrementCounter(view : View){
-        countValue += 1
-        displayCounter()
-    }
-
-    fun decrementCounter(view : View){
-        countValue -= 1
-        displayCounter()
-    }
-
-    fun displayCounter(){
-        counterTextView.text = countValue.toString()
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        counter = savedInstanceState.getInt("counter", 0)
     }
 
 }
