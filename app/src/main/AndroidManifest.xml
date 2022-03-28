@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PractiseAndroid">
         <activity
+            android:name=".OnSaveInstanceState"
+            android:exported="false" />
+        <activity
             android:name=".AlarmManagerExample"
             android:exported="true">
             <intent-filter>
@@ -20,11 +23,9 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
-    <receiver android:name="MyBroadcastReceiver"></receiver>
-        
+            android:exported="true"></activity>
+
+        <receiver android:name=".MyBroadcastReceiver" />
     </application>
-    
 
 </manifest>
