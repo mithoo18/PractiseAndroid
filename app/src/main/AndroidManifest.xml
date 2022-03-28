@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PractiseAndroid">
         <activity
-            android:name=".Builder.BuilderActivity"
+            android:name=".Changing_Theme.ThemeActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,12 +19,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".BasicMVP.MVPActivity"
+            android:name=".BoundService.BoundServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Builder.BuilderActivity"
             android:exported="true">
         </activity>
         <activity
+            android:name=".BasicMVP.MVPActivity"
+            android:exported="true" />
+        <activity
             android:name=".AudioRecording.Audiorecording"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Animatedgradientbackground"
             android:exported="true" />
