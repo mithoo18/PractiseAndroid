@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PractiseAndroid">
         <activity
-            android:name=".AudioRecording.Audiorecording"
+            android:name=".BasicMVP.MVPActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,15 +19,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Animatedgradientbackground"
+            android:name=".AudioRecording.Audiorecording"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".Animatedgradientbackground"
+            android:exported="true"></activity>
         <activity
             android:name=".NinePathImage"
             android:exported="false" />
         <activity
             android:name=".OnSaveInstanceState"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".AlarmManagerExample"
             android:exported="true" />
