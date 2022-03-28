@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PractiseAndroid/app/src/main/res/drawable/drawable_amber_gradient.xml" value="0.125" />
+        <entry key="..\:/PractiseAndroid/app/src/main/res/drawable/drawable_gradient_animation_list.xml" value="0.125" />
+        <entry key="..\:/PractiseAndroid/app/src/main/res/drawable/drawable_green_gradient.xml" value="0.125" />
+        <entry key="..\:/PractiseAndroid/app/src/main/res/drawable/drawable_purple_gradient.xml" value="0.125" />
+        <entry key="..\:/PractiseAndroid/app/src/main/res/drawable/drawable_red_gradient.xml" value="0.125" />
         <entry key="..\:/PractiseAndroid/app/src/main/res/layout/activity_alarm_manager_example.xml" value="0.22" />
+        <entry key="..\:/PractiseAndroid/app/src/main/res/layout/activity_animatedgradientbackground.xml" value="0.2" />
         <entry key="..\:/PractiseAndroid/app/src/main/res/layout/activity_nine_path_image.xml" value="0.22" />
         <entry key="..\:/PractiseAndroid/app/src/main/res/layout/activity_on_save_instance_state.xml" value="0.378125" />
       </map>

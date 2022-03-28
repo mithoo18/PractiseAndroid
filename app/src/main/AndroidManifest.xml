@@ -10,10 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PractiseAndroid">
         <activity
-            android:name=".NinePathImage"
-            android:exported="false" />
-        <activity
-            android:name=".OnSaveInstanceState"
+            android:name=".Animatedgradientbackground"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,10 +19,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AlarmManagerExample"
+            android:name=".NinePathImage"
+            android:exported="false" />
+        <activity
+            android:name=".OnSaveInstanceState"
             android:exported="true">
-
         </activity>
+        <activity
+            android:name=".AlarmManagerExample"
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" />
