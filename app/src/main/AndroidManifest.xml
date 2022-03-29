@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PractiseAndroid">
         <activity
+            android:name=".MVVM_Basic.view.MVVM_Basic_Activity"
+            android:exported="false" />
+        <activity
             android:name=".MVVM_Dragger_RxJava.di.PerActivity"
             android:exported="false" />
         <activity
