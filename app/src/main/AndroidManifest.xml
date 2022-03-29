@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.practiseandroid">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,8 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PractiseAndroid">
         <activity
+            android:name=".MVVM_Dragger_RxJava.di.PerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MVVM_Dragger_RxJava.ui.MVVMActivity"
+            android:exported="false" />
+        <activity
             android:name=".Changing_Theme.ThemeActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,8 +31,7 @@
             android:exported="false" />
         <activity
             android:name=".Builder.BuilderActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".BasicMVP.MVPActivity"
             android:exported="true" />
