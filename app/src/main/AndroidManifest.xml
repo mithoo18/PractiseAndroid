@@ -13,7 +13,13 @@
         android:theme="@style/Theme.PractiseAndroid">
         <activity
             android:name=".MVVM_Basic.view.MVVM_Basic_Activity"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MVVM_Dragger_RxJava.di.PerActivity"
             android:exported="false" />
@@ -23,11 +29,6 @@
         <activity
             android:name=".Changing_Theme.ThemeActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".BoundService.BoundServiceActivity"

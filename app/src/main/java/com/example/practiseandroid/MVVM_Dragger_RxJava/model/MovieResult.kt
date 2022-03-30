@@ -1,10 +1,9 @@
 package com.example.practiseandroid.MVVM_Dragger_RxJava.model
 
-import com.google.gson.annotations.SerializedName
 
 class MovieResult {
 
-    data class MovieResult(
+   /* data class MovieResult(
         @SerializedName("page") var page : Int =0,
         @SerializedName("total_results") var totalResults : Int = 0,
         @SerializedName("total_pages") var totalPages : Int =0,
@@ -26,5 +25,5 @@ class MovieResult {
         @SerializedName("adult") var adult: Boolean = false,
         @SerializedName("overview") var overview: String = "",
         @SerializedName("release_date") var releaseDate: String = ""
-    )
+    )*/
 }

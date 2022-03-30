@@ -7,6 +7,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.practiseandroid.MVVM_Basic.model.LoginTableModel
 
+
 @Dao
 interface DAOAccess {
 
@@ -14,8 +15,6 @@ interface DAOAccess {
     suspend fun InsertData(loginTableModel: LoginTableModel)
 
     @Query("SELECT * FROM Login WHERE Username =:username")
-    fun getLoginDetails(username : String?) : LiveData<LoginTableModel>
-
-
+    fun getLoginDetails(username: String?) : LiveData<LoginTableModel>
 
 }
