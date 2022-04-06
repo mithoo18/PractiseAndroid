@@ -20,7 +20,7 @@ interface API {
     }
 
     @GET("profiles")
-    fun getProfiles() : Call<List><Profile>
+    fun getProfiles() : Call<List<Profile>>
 
 
 

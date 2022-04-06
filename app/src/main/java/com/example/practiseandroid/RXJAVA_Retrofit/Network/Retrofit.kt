@@ -1,4 +1,4 @@
-package com.example.RXJAVA_Retrofit.Network
+package com.example.practiseandroid.RXJAVA_Retrofit.Network
 
 import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
 import retrofit2.Retrofit
@@ -8,7 +8,7 @@ class Retrofit {
 
     companion object{
         private val retrofit = Retrofit.Builder()
-            .baseUrl("https://api.publicapis.org/entries")
+            .baseUrl(Url.baseurl)
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
             .build()
