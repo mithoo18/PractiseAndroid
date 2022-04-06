@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PractiseAndroid">
         <activity
+            android:name="com.example.RXJAVA_Retrofit.RXJavaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MVVM_Retrofit.view.MVVM_Retrofit_Activity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,8 +25,7 @@
         </activity>
         <activity
             android:name=".MVVM_Basic.view.MVVM_Basic_Activity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MVVM_Dragger_RxJava.di.PerActivity"
             android:exported="false" />
@@ -32,7 +34,7 @@
             android:exported="false" />
         <activity
             android:name=".Changing_Theme.ThemeActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".BoundService.BoundServiceActivity"
             android:exported="false" />

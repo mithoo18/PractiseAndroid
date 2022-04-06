@@ -3,12 +3,17 @@ package com.example.practiseandroid.SwipeSample
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class ProfilesAdapter : RecyclerView.Adapter<ProfilesAdapter.ProfileViewHolder>() {
+class ProfilesAdapter  {
+
+/*
+:
+    RecyclerView.Adapter<ProfilesAdapter.ProfileViewHolder>() {
     class ProfileViewHolder {
+*/
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProfileViewHolder {
+/*    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProfileViewHolder {
         TODO("Not yet implemented")
     }
 
@@ -20,8 +25,10 @@ class ProfilesAdapter : RecyclerView.Adapter<ProfilesAdapter.ProfileViewHolder>(
 
 
     inner class ProfileViewolder(val binding : RecyclerViewProfileBinding) :
-        RecyclerView.ViewHolder(binding.root)
+        RecyclerView.ViewHolder(binding.root)*/
+/*
 
 }
+*/
 
 
